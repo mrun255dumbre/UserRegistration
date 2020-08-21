@@ -32,7 +32,7 @@ fi
 
 
 read -p "Enter your password : " password
-if [[ ${#password} -ge 8 ]] && [[ "$password" == *[[:upper:]]* ]]
+if [[ ${#password} -ge 8 ]] && [[ "$password" == *[[:upper:]]* && "$password" == *[[:lower:]]* && "$password" == *[0-9]* ]]
 then
 	echo "Password is correct"
 else
