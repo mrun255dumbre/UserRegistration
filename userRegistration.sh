@@ -29,3 +29,12 @@ then
 else
 	echo "Incorrect"
 fi
+
+
+read -p "Enter your password : " password
+if [[ ${#password} -ge 8 ]]
+then
+	echo "Password is correct"
+else
+	echo "please enter correct password(contain at least one upper case, one special character and one numeric value)";
+fi
